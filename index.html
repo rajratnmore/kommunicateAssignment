@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .parent {
+            display: flex;
+            position: relative;
+            width: 100vw; 
+            height: 300px;
+            border-left: 2px solid black;
+            padding-top: 40px;
+        }
+
+        .firstDiv, .secondDiv {
+            height: 50%;
+        }
+
+        .firstDiv {
+            width: 70%;
+            z-index: 2;
+            position: relative;
+            border: 1px solid #2DD35C;
+            border-left: none;
+            padding: 40px 80px;
+            border-top-right-radius: 200px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;            
+            margin-bottom: 0px;
+        }
+
+        .heading {
+            font-weight: bolder;
+            color: #5553B7;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .btnFirst {
+            padding: 10px 15px;
+            background-color: #2DD35C;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .btnSecond {
+            padding: 10px 15px;
+            background-color: #fff;
+            color: #5553B7;
+            border: 1px solid #5553B7;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .secondDiv {
+            top: 50px;
+            width: 60%;
+            background-color: #5553B7;
+            z-index: 1; /* Higher z-index to be on top */
+            position: relative;
+            margin-left: -30%;
+            border-top-left-radius: 200px;
+            border-bottom-left-radius: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="firstDiv">
+            <p class="title">Ready to Automate your</p>
+            <h2 class="heading">E-Commerce store?</h2>
+            <button class="btnFirst">Try for free</button>
+            <button class="btnSecond">Book a demo</button>
+        </div>
+        <div class="secondDiv"></div>
+    </div>
+</body>
+</html>
+
